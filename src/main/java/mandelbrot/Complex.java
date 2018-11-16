@@ -156,7 +156,7 @@ public class Complex {
             throw new ArithmeticException("divide by zero");
         }
         double m = squaredModulus();
-        return new Complex(ONE / m, ONE / m);
+        return new Complex(real / m, -imaginary/ m);
     }
 
     /**
